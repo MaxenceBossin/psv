@@ -1,0 +1,25 @@
+@import "inc/variable";
+@import "inc/fonction";
+
+
+@import "inc/responsive";
+@import "inc/base";
+@import "inc/animations";
+
+@import "header_footer/header";
+/*ajout des page ici*/
+@import "pages/home";
+@import "pages/vaccins";
+@import "pages/home_login";
+@import "pages/home_register";
+@import "pages/home_profil";
+@import "pages/home_contact";
+@import "pages/home_modif_vaccin";
+@import "pages/home_add_vaccin";
+@import "pages/panel_buttons";
+@import "pages/listVaccinsUser";
+@import "pages/legals";
+
+@import "pages/error403";
+@import "pages/error404";
+@import "header_footer/footer";

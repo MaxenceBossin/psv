@@ -1,0 +1,90 @@
+@import "../inc/variable";
+@import "../inc/fonction";
+
+#vaccins{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+  .wrap1 {
+    @include breakpoints(phone) {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .vrecher {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    .vrecher label {
+      font-size: $sizeH1;
+      @include breakpoints(tablette){
+        font-size: $sizeH3;
+      }
+    }
+
+    .vrecher input {
+      width: 30%;
+      border-radius: 22px;
+      border: 1px solid;
+      text-align: center;
+      padding: .5rem;
+      margin: 1rem;
+      @include breakpoints(tablette){
+        width: 65%;
+      }
+    }
+
+    .vaccins {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      @include breakpoints(tablette) {
+        flex-flow: column;
+        align-items: center;
+      }
+    }
+
+    .vaccin {
+      display: flex;
+      flex-flow: column;
+      width: 46%;
+      margin: 1rem .8rem;
+      text-align: center;
+      /*background-color: #00aeef;*/
+      padding: 1rem 1rem;
+      @include breakpoints(tablette) {
+        width: 75%;
+      }
+      @include breakpoints(phone) {
+        width: 100%;
+        margin: .5rem 0;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .vaccin h2 {
+      font-size: $sizeH2;
+    }
+
+    .vaccin p {
+      margin: 1rem 0;
+      font-size: $sizeH3;
+    }
+
+    .vimg {
+      display: flex;
+      align-items: center;
+      background: url("../../maquette/icons/seringue.png") no-repeat;
+      background-size: 100%;
+      width: 145px;
+      height: 135px;
+    }
+  }
+}

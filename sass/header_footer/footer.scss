@@ -1,0 +1,87 @@
+@import "../inc/variable";
+@import "../inc/fonction";
+
+#footer{
+  font-family: $roboto;
+  background: $lightgrey;
+  color: black;
+
+  .logo_footer {
+    width: 13%;
+    img {
+      width: 100%;
+    }
+    a {
+      transition-duration: .6s;
+    }
+    a:hover {
+      transition-duration: .6s;
+      opacity: 50%;
+    }
+  }
+
+  .wrap2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    @include breakpoints(tablette) {
+      justify-content: center;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 1rem;
+        li {
+
+          a {
+            font-size: 1rem;
+            text-align: center;
+            transition-duration: .6s;
+          }
+
+          a:hover {
+            text-decoration-line: underline;
+            transition-duration: .6s;
+          }
+        }
+      }
+    }
+
+    .social{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      gap: 1rem;
+      li{
+        transition-duration: .6s;
+      }
+      a {
+        transition-duration: .6s;
+      }
+      li:hover {
+        transition-duration: .6s;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+      }
+    }
+
+    .copyright {
+      font-family: $poiret;
+      font-size: 1rem;
+      padding: .5rem 0;
+
+      @include breakpoints(tablette) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+
